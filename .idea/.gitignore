@@ -1,0 +1,21 @@
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+# 基于编辑器的 HTTP 客户端请求
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+.idea
+venv/
+.vscode/
+*.pyc
+*.log
+zrb_config.py
+.DS_Store
+zrb/
+.metals/
+bin/flink_sqls/*/*
+bin/automatic_rule/rule_config.py
+Pipfile*
+.tool-versions
