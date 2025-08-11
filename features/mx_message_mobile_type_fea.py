@@ -383,7 +383,7 @@ if __name__ == '__main__':
     mobile= 'CMAS_Presidential'
     # mobile= 'Totalplay'
     # mobile= '+Banamex'
-    print(MxMessageMobileTypeFea().process_mobile(mobile))
+    # print(MxMessageMobileTypeFea().process_mobile(mobile))
     # serial_id = 3187578
     user_id = 6601444
     create_tim = 1750607815
@@ -400,7 +400,7 @@ if __name__ == '__main__':
     #     print('target False need record', target)
 
     # MxMessageMobileTypeFea().get_sql()
-    # MxMessageMobileTypeFea().mobile_label_by_qwen25(['Banamex'])
+    MxMessageMobileTypeFea().mobile_label_by_qwen25(['Banamex'])
 
     # if len(re.findall('unotv', mobile, re.I)) > 0:
     #     print 11

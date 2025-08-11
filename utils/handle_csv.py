@@ -22,5 +22,3 @@ def readcsv(file_path):
             # print(row)  # 每行是一个列表，如 ['13800138000']
             mobiles.add(row[0])
     print json.dumps(list(mobiles), encoding='utf-8', ensure_ascii=False)
-if __name__ == '__main__':
-    readcsv('/Users/admin/Downloads/todo_mobiles.csv')
