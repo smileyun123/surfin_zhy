@@ -106,5 +106,7 @@ def store_json_to_table():
     # logging.info('insert %s rows into %s' % (total_inserted, 'mx_message_mobile_label'))
 
 if __name__ == '__main__':
-    model = MxMessageMobileLableModel()
-    print model.get_mobile_label()
+    # model = MxMessageMobileLableModel()
+    # print model.get_mobile_label()
+    mobiles = ["+52Hoy  28 de julio  por la tarde en Mina entrega  a bajo costo de Mochilas paquetes Escolares y de limpieza manda mensaje al 922 273 9208 || manda mensaje al 922 273 9208"]
+    print _process_mobile(mobiles[0])
