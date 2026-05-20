@@ -46,21 +46,64 @@ feature_list = [
     # 'report_credit_first_v4_6_fea',
     # 'bill_v1_fea_te',
     # 'bill_v2_fea_te',
-    # 'model_result',
 
-    'mx_credit_buro_query_fea',
-    'mx_credit_buro_history_fea_v1_0',
-    'mx_credit_buro_history_fea_v1_1',
-    'mx_credit_buro_history_fea_v1_2',
-    'mx_credit_buro_history_fea_v1_3',
-    'mx_credit_buro_history_fea_v1_4',
-    'mx_credit_buro_summary_fea',
+    # 'mx_credit_buro_query_fea',
+    # 'mx_credit_buro_history_fea_v1_0',
+    # 'mx_credit_buro_history_fea_v1_1',
+    # 'mx_credit_buro_history_fea_v1_2',
+    # 'mx_credit_buro_history_fea_v1_3',
+    # 'mx_credit_buro_history_fea_v1_4',
+    # 'mx_credit_buro_summary_fea',
 
+    # 'rc_data_nubarium_similarly_fea',
     # 'device_attribute_fea_te'
+    # 'bill_v3_fea_te',
+    # 'cheat_app_fea',
+
+    # 'app_category_fea',
+    # 'app_top_fit_fea',
+    # 'device_attribute_fea',
+    # 'kaby_app_score_fea',
+    # 'mx_app_tgi_v7_fea',
+    # 'mx_app_tgi_v8_fea',
+    # 'mx_message_bank_agency_v1_1_fea',
+    # 'mx_message_bank_agency_v1_2_fea',
+    # 'mx_message_bank_agency_v1_3_fea',
+    # 'mx_message_info_competing_agency_v2_1_fea',
+    # 'mx_message_info_competing_agency_v2_2_fea',
+    # 'mx_message_info_competing_agency_v2_3_fea',
+    # 'mx_message_mobile_type_fea',
+    # 'phone_mem_fea',
+    # 'cheat_app_fea',
+    # 'id_apply_behavior_fea',
+    # 'id_repayment_behavior_fea',
+    # 'phone_apply_behavior_fea',
+    # 'phone_repayment_behavior_fea',
+    'model_result',
+    # 'app_category_fea',
+    # 'device_attribute_fea',
+    # 'kaby_app_score_fea',
+    # 'mx_app_tgi_v7_fea',
+    # 'id_apply_behavior_fea',
+    # 'mx_app_tgi_v8_fea',
+    # 'app_top_fit_fea',
+    # 'phone_apply_behavior_fea',
+    # 'phone_mem_fea'
+    # 'qa_info_fea',
+    # 'transaction_monitor_fea',
+    # 'authority_blacklist_fea',
+    # 'app_google_play_info',
+    # 'bill_v1_fea_te',
+    # 'bill_v2_fea_te',
+    # 'bill_v3_fea_te',
+    # 'loan_movement_fea_v2_te',
+    # 'loan_movement_fea_v1_te',
 
 ]
 
-
+"""
+朱江敏 15215179188
+"""
 def request_api(feature):
     data_dict = {
         'ct': 'sufinc',
@@ -68,7 +111,7 @@ def request_api(feature):
         'intersection_col': '',
         'url': 'https://oapi.dingtalk.com/robot/send?access_token=288f03a8229a24b1f6a8dd8c6b250d82671f865fbd37fcbb178cc5a294397bbc',
         'sec': 'SEC168515483ed15c1b498ddfa8a3048dd789619f6e5a965e4ffd557e1055e2fb50',
-        'at_user': 'zhanghaiyun',
+        'at_user': '15215179188',
         'full_fire': 0,
         'is_full_msg': 0,
         'level': 2,

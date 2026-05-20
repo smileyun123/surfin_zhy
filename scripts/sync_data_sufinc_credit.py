@@ -36,30 +36,42 @@ import json
 # face_new_fea_policy
 # engine_result_fea_policy
 
+
 feature_list = [
-    # 'live_detection_fea_policy',
-    # 'self_ocr_id_card_information_fea_policy'
-    # 'kaby_data_walla_high_risk_fea_third',
-    # 'kaby_data_walla_mbrank_fea_third',
-    # 'mx_message_mobile_type_keyword_filter2_fea',
-    # 'kaby_message_read_keyword_filter2_fea',
-    # 'device_price_fea',
-    'device_attribute_fea',
-    # 'advance_score_v6_fea',
-    # 'icekcredit_multiplat_fea',
-    # 'apply_behavior_fea',
-    # 'model_result'
+    # 'cheat_app_fea',
+    # 'card_and_loan_fea',
+    # 'qa_info_fea',
+    # 'report_credit_v3_fea',
+    # 'repayment_performance_fea',
+    # 'bill_v1_fea',
+    'bill_v2_fea',
+    # 'credit_rule_fea',
+    # 'neo4j_relation_fea_ext',
+    # 'loan_info_fea',
+    # 'rule_history_loan_performance_v2_fea',
+    # 'mx_advance_multi_platform_fea_third',
+    # 'report_credit_first_v4_6_fea',
+    # 'report_credit_first_v4_4_fea',
+    # 'report_credit_first_v4_1_fea',
+    # 'report_credit_first_v4_3_fea',
+    # 'origin_repayment_flow_v1_1_fea',
+    # 'rule_history_loan_performance_v3_fea',
+
 ]
 
+"""
+朱江敏 15215179188
+"""
 
 def request_api(feature):
     data_dict = {
-        'ct': 'kaby',
+        'ct': 'loan_sufinc',
         'fea_table': 'mx_feature.{}'.format(feature),
+        'pg_table': 'loan_feature.{}'.format(feature),
         'intersection_col': '',
         'url': 'https://oapi.dingtalk.com/robot/send?access_token=288f03a8229a24b1f6a8dd8c6b250d82671f865fbd37fcbb178cc5a294397bbc',
         'sec': 'SEC168515483ed15c1b498ddfa8a3048dd789619f6e5a965e4ffd557e1055e2fb50',
-        'at_user': 'zhanghaiyun',
+        'at_user': '15215179188',
         'full_fire': 0,
         'is_full_msg': 0,
         'level': 2,
@@ -67,7 +79,7 @@ def request_api(feature):
     }
 
     # 增量回溯使用，比如按照serial_id增量。
-    # data_dict = {'ct': 'vdong', 'fea_table': 'vdong_feature.juicy_score_fea', 'intersection_col': 'id'}
+    # data_dict = {'ct': 'vdong', 'fea_table': 'vdong_feature.juicy_score_fea', 'intersection_col': 'serial_id'}
 
     data_json = json.dumps({"type": "feature", "data": data_dict})
     rep = requests.post("http://101.200.146.156:5010/fea_extract", data=data_json, headers={"Content-Type": "application/json;charset=utf-8"})

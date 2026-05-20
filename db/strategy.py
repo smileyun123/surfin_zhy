@@ -15,6 +15,8 @@ db_password = '12345678'  # 例如：'123456'
 db_name = 'strategy'  # 数据库名
 db_port = 3306  # MySQL 默认端口
 
+# mysql -u root -p 目标数据库名 < /你的文件路径/script.sql
+# # mysql -u root -p minghui < /Users/admin/Downloads/minghui/original_collection_data.sql
 # ===========================
 # 2. 插入参数配置
 # ===========================
